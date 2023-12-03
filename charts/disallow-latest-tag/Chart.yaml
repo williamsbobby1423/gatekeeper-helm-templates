@@ -1,6 +1,6 @@
 apiVersion: v2
-name: gatekeeper-policy-disallow-latest-tag
-description: A chart to install gatekeeper disallow latest tag templates
+name: disallow-latest-tag
+description: A chart to install gatekeeper disallow latest tag constraint
 type: application
 version: 1.0.0
 appVersion: 1.0.0

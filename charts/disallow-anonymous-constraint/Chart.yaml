@@ -1,6 +1,6 @@
 apiVersion: v2
-name: gatekeeper-policies
-description: A chart to install gatekeeper constraint templates
+name: disallow-anonymous-constraint
+description: A chart to install gatekeeper disallow anonymous constraint
 type: application
 version: 1.0.0
 appVersion: 1.0.0
