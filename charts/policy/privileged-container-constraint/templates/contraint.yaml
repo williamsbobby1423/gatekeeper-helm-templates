@@ -1,0 +1,13 @@
+{{- if .Values.enable }}
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPPrivilegedContainer
+metadata:
+  name: privileged-container-{{ $.Release.Name }}
+spec:
+  enforcementAction: {{ .Values.enforcement_action | default "deny" }}
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    excludedNamespaces: {{ toYaml .Values.excluded_namespaces | nindent 6}}
+{{- end }}

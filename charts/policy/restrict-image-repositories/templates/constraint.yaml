@@ -1,0 +1,14 @@
+{{- if .Values.enable }}
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: restrict-image-repositories-{{ $.Release.Name }}
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces: {{ toYaml .Values.namespaces | nindent 6 }}
+  parameters:
+    repos: {{ toYaml .Values.repos | nindent 6 }}
+{{- end }}

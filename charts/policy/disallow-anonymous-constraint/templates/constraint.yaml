@@ -1,0 +1,15 @@
+{{- if .Values.enable }}
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sDisallowAnonymous
+metadata:
+  name: no-anonymous-{{ $.Release.Name }}
+spec:
+  match:
+    kinds:
+      - apiGroups: ["rbac.authorization.k8s.io"]
+        kinds: ["ClusterRoleBinding"]
+      - apiGroups: ["rbac.authorization.k8s.io"]
+        kinds: ["RoleBinding"]
+  parameters:
+    allowedRoles: {{ toYaml .Values.allowed_roles | nindent 6 }}
+{{- end }}

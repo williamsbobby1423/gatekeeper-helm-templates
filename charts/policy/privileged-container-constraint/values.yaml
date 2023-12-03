@@ -1,0 +1,4 @@
+# Global Values
+enable: false
+enforcement_action: deny
+excluded_namespaces: []

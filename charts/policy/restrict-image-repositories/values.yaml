@@ -1,0 +1,5 @@
+# Global Values
+enable: false
+enforcement_action: deny
+namespaces: []
+repos: []

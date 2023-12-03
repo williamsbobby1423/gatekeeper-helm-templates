@@ -1,0 +1,15 @@
+{{- if .Values.enable }}
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sDisallowedTags
+metadata:
+  name: disallow-latest-tag-{{ $.Release.Name }}
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces: {{ toYaml .Values.namespaces | nindent 6 }}
+  parameters:
+    tags: {{ toYaml .Values.tags | nindent 6 }}
+    exemptImages: {{ toYaml .Values.exempt_images | nindent 6 }}
+{{- end }}

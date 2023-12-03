@@ -1,0 +1,5 @@
+# Global Values
+enable: false
+exempt_images: []
+namespaces: []
+tags: []
