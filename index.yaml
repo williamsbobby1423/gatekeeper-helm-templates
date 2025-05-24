@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  disallow-anonymous-constraint:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-24T22:02:40.641703024Z"
+    description: A chart to install gatekeeper disallow anonymous constraint
+    digest: 8f3b9666ccf138a9acbda942007c10194b6eb35e65233804840a846997eb288a
+    name: disallow-anonymous-constraint
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/williamsbobby1423/kyverno-helm-templates/gh-pages/helm/disallow-anonymous-constraint-1.0.0.tgz
+    version: 1.0.0
+  disallow-latest-tag:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-24T22:02:40.641858244Z"
+    description: A chart to install gatekeeper disallow latest tag constraint
+    digest: 25918be6a18f8fb1642cc3467cc2dad375c7b1b94e8c32496b44b5aba967d8ce
+    name: disallow-latest-tag
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/williamsbobby1423/kyverno-helm-templates/gh-pages/helm/disallow-latest-tag-1.0.0.tgz
+    version: 1.0.0
+  privileged-container-constraint:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-24T22:02:40.642241933Z"
+    description: A chart to install gatekeeper privileged-container constraint
+    digest: a7ca0f28bb28f4286ea43e9a623a4251b04cae9409131bdcc220e43ac943599d
+    name: privileged-container-constraint
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/williamsbobby1423/kyverno-helm-templates/gh-pages/helm/privileged-container-constraint-1.0.0.tgz
+    version: 1.0.0
+  restrict-image-repositories:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-24T22:02:40.642530761Z"
+    description: A chart to install the gatekeeper restrict image repositories constraint
+    digest: 23db1549764a049f45b5d0599c90c04c8ff58d6b0042b22c4a897566fcdb52af
+    name: restrict-image-repositories
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/williamsbobby1423/kyverno-helm-templates/gh-pages/helm/restrict-image-repositories-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-05-24T22:02:40.641377624Z"
